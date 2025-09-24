@@ -75,17 +75,20 @@ ESP32-DigitalFrame/ ├── server.py # Flask backend (Raspberry Pi) ├──
 ## Setup Instructions
 
 ```bash
-On your host server:
+RaspberryPI (Host)
 pip install flask pillow pillow-heif werkzeug
 python3 server.py
 Server accessible at: http://localhost:5000
+```
 
+```bash
 ESP32 (Client)
 Flash sketch_aug12a.ino to ESP32 via Arduino IDE
 
 Update WiFi credentials and server IP in code
 
 On boot, ESP32 connects to server, downloads images, and begins display loop
+```
 
 Development Notes
 Server-side image resizing ensures low memory footprint on ESP32
@@ -106,12 +109,11 @@ Folder/album support on Raspberry Pi server
 Replace polling with MQTT or WebSocket for real-time updates
 
 Touchscreen gesture support (if hardware permits)
-```
 
 ---
 
 # Author
 
-**Tyler S.**
-Computer Science Student
+**Tyler S.** <br />
+Computer Science Student <br />
 September 24, 2025.
