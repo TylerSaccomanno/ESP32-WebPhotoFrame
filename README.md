@@ -50,10 +50,13 @@ Designed for educational and portfolio purposes, it showcases:
 | Embedded   | ESP32 (Arduino framework), ST7796 / ILI9466 TFT display |
 | Hardware   | ESP32, Raspberry Pi (server + storage)                |
 
+---
 
 ## Project Structure
 
 ESP32-DigitalFrame/ ├── server.py # Flask backend (Raspberry Pi) ├── sketch_aug12a.ino # ESP32 firmware (Arduino) ├── static/ │ ├── image.html # Web dashboard │ ├── script.js # Frontend logic │ ├── style.css # Dashboard styling │ ├── trash-can.png # Delete icon │ └── cloud-upload.png # Upload icon ├── photos/ # Stored and resized images └── tools.txt # Tech stack notes
+
+---
 
 ## API Endpoints
 
@@ -67,7 +70,11 @@ ESP32-DigitalFrame/ ├── server.py # Flask backend (Raspberry Pi) ├──
 | POST   | `/api/sendMessage`      | Stores message for ESP32             |
 | GET    | `/api/sendMessage`      | Retrieves and clears stored message  |
 
+---
+
 ## Setup Instructions
+
+---
 
 ### Raspberry Pi (Server)
 
