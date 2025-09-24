@@ -46,7 +46,7 @@ Designed for educational and portfolio purposes, it showcases:
 | Layer      | Tools & Libraries                                      |
 |------------|--------------------------------------------------------|
 | Frontend   | HTML5, CSS3, Vanilla JavaScript                        |
-| Backend    | Python 3.x, Flask, Pillow, pillow-heif, Werkzeug ProxyFix |
+| Backend    | Python 3.x, Flask, Pillow, pillow-heif, Werkzeug ProxyFix, Nginx |
 | Embedded   | ESP32 (Arduino framework), ST7796 / ILI9466 TFT display |
 | Hardware   | ESP32, Raspberry Pi (server + storage)                |
 
