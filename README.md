@@ -74,14 +74,11 @@ ESP32-DigitalFrame/ ├── server.py # Flask backend (Raspberry Pi) ├──
 
 ## Setup Instructions
 
----
-
-### Raspberry Pi (Server)
-
 ```bash
+On your host server:
 pip install flask pillow pillow-heif werkzeug
 python3 server.py
-Server accessible at: http://<pi-ip>:5000
+Server accessible at: http://localhost:5000
 
 ESP32 (Client)
 Flash sketch_aug12a.ino to ESP32 via Arduino IDE
@@ -109,12 +106,12 @@ Folder/album support on Raspberry Pi server
 Replace polling with MQTT or WebSocket for real-time updates
 
 Touchscreen gesture support (if hardware permits)
+```
 
-Author
-Developed by Tyler Saccomanno as a hands-on exploration of:
+---
 
-Embedded systems and RESTful communication
+# Author
 
-Web backend architecture and image processing
-
-Frontend design for responsive, browser-based control
+**Tyler S.**
+Computer Science Student
+September 24, 2025.
