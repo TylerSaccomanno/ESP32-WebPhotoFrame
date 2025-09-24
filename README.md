@@ -61,8 +61,8 @@ ESP32-DigitalFrame/
 │ ├── image.html # Web dashboard
 │ ├── script.js # Frontend logic
 │ ├── style.css # Dashboard styling
-│ ├── trash-can.png # 
-│ └── cloud-upload.png # 
+│ ├── trash-can.png 
+│ └── cloud-upload.png 
 ├── photos/ # Stored and resized images
 └── tools.txt # Libraries and plugins used in this project.
 ```
