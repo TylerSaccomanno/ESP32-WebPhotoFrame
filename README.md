@@ -123,5 +123,4 @@ Development Notes
 # Author
 
 **Tyler S.** <br />
-Computer Science Student <br />
 September 24, 2025.
