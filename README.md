@@ -1,6 +1,6 @@
 # ESP32 Digital Picture Frame
 
-A full-stack IoT system that transforms an ESP32 microcontroller with a 4" TFT display (ST7796 / ILI9466) into a networked digital photo frame. The ESP32 retrieves and cycles through images hosted on a Raspberry Pi Flask server, displaying them in batches of 10 while polling for user-sent messages.
+A full-stack IoT system that transforms an ESP32 microcontroller with a 4" TFT display (ST7796 / ILI9466) into a remotely managed digital photo frame inspired by the Aura Digital Frame. The ESP32 connects to a Raspberry Pi Flask server over WiFi, dynamically retrieving and rendering images while polling for user-sent messages.
 
 ---
 
@@ -10,9 +10,9 @@ This project demonstrates real-time device-to-server communication and media str
 
 Designed for educational and portfolio purposes, it showcases:
 
-- Embedded networking (ESP32 WiFi + REST)
-- Backend development (Flask APIs, image processing)
-- Frontend UI design (vanilla JS + responsive CSS)
+- Embedded networking (ESP32, Portforwarding, REST)
+- Backend development (Flask APIs, Image processing)
+- Frontend UI design (JS, HTML + CSS)
 
 ---
 
@@ -107,16 +107,16 @@ Development Notes
 
  - Messages are just a fun part: Not neccesarily a big part of the project nor something you will notice that often when . 
 
-Future Enhancements
-Local image caching on ESP32 for smoother transitions
+**Future Enhancements**
+ - Local image caching on ESP32 for smoother transitions
 
-Overlay messages directly on displayed images
+ - Overlay messages directly on displayed images
 
-Folder/album support on Raspberry Pi server
+ - Folder/album support on Raspberry Pi server
 
-Replace polling with MQTT or WebSocket for real-time updates
+ - Replace polling with MQTT or WebSocket for real-time updates
 
-Touchscreen gesture support (if hardware permits)
+ - Touchscreen gesture support (if hardware permits)
 
 ---
 
