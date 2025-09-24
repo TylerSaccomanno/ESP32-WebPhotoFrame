@@ -28,7 +28,7 @@ Designed for educational and portfolio purposes, it showcases:
 ### Raspberry Pi Server (`server.py`)
 
 - Hosts images in `photos/` directory
-- Converts HEIC/JPEG/PNG to JPEG (320×480) using Pillow + pillow-heif
+- Converts HEIC/JPEG/PNG to JPEG (320×480) using Pillow
 - Exposes RESTful endpoints for image management and messaging
 - Serves dashboard UI and image assets
 
@@ -54,7 +54,17 @@ Designed for educational and portfolio purposes, it showcases:
 
 ## Project Structure
 
-ESP32-DigitalFrame/ ├── server.py # Flask backend (Raspberry Pi) ├── sketch_aug12a.ino # ESP32 firmware (Arduino) ├── static/ │ ├── image.html # Web dashboard │ ├── script.js # Frontend logic │ ├── style.css # Dashboard styling │ ├── trash-can.png # Delete icon │ └── cloud-upload.png # Upload icon ├── photos/ # Stored and resized images └── tools.txt # Tech stack notes
+ESP32-DigitalFrame/
+├── server.py # Flask backend (Raspberry Pi)
+├── sketch_aug12a.ino # ESP32 firmware (Arduino)
+├── static/
+│ ├── image.html # Web dashboard
+│ ├── script.js # Frontend logic
+│ ├── style.css # Dashboard styling
+│ ├── trash-can.png # Delete icon
+│ └── cloud-upload.png # Upload icon
+├── photos/ # Stored and resized images
+└── tools.txt # Tech stack notes
 
 ---
 
@@ -91,13 +101,11 @@ On boot, ESP32 connects to server, downloads images, and begins display loop
 ```
 
 Development Notes
-Server-side image resizing ensures low memory footprint on ESP32
+ - Server-side image resizing ensures low memory footprint on ESP32
+ 
+ - ESP32 loop is intentionally simple for reliability and clarity
 
-ESP32 loop is intentionally simple for reliability and clarity
-
-Dashboard UI is minimal by design: thumbnails + basic controls
-
-Messages are ephemeral: cleared after ESP32 reads them
+ - Messages are just a fun part: Not neccesarily a big part of the project nor something you will notice that often when . 
 
 Future Enhancements
 Local image caching on ESP32 for smoother transitions
