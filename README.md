@@ -53,7 +53,7 @@ Designed for educational and portfolio purposes, it showcases:
 ---
 
 ## Project Structure
-
+```bash
 ESP32-DigitalFrame/
 ├── server.py # Flask backend (Raspberry Pi)
 ├── sketch_aug12a.ino # ESP32 firmware (Arduino)
@@ -65,7 +65,7 @@ ESP32-DigitalFrame/
 │ └── cloud-upload.png # Upload icon
 ├── photos/ # Stored and resized images
 └── tools.txt # Tech stack notes
-
+```
 ---
 
 ## API Endpoints
