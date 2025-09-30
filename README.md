@@ -88,7 +88,7 @@ ESP32-DigitalFrame/
 RaspberryPI (Host)
 pip install flask pillow pillow-heif werkzeug
 python3 server.py
-Server accessible at: http://localhost:5000
+Server accessible at: http://localhost:5000 or http://PublicIP
 ```
 
 ```bash
@@ -100,12 +100,12 @@ Update WiFi credentials and server IP in code
 On boot, ESP32 connects to server, downloads images, and begins display loop
 ```
 
-Development Notes
+**Development Notes**
  - Server-side image resizing ensures low memory footprint on ESP32
  
  - ESP32 loop is intentionally simple for reliability and clarity
 
- - Messages are just a fun part: Not neccesarily a big part of the project nor something you will notice that often when . 
+ - Messages are just a fun part, not neccesarily a big part of the project nor something you will really notice unless you're staring at the screen when a message is received. 
 
 **Future Enhancements**
  - Local image caching on ESP32 for smoother transitions
