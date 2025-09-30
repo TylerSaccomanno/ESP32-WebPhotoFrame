@@ -46,7 +46,7 @@ Designed for educational and portfolio purposes, it showcases:
 | Layer      | Tools & Libraries                                      |
 |------------|--------------------------------------------------------|
 | Frontend   | HTML5, CSS3, Vanilla JavaScript                        |
-| Backend    | Python 3.x, Flask, Pillow, pillow-heif, Werkzeug ProxyFix |
+| Backend    | Python 3.x, Flask, Pillow, pillow-heif, Werkzeug ProxyFix, Nginx |
 | Embedded   | ESP32 (Arduino framework), ST7796 / ILI9466 TFT display |
 | Hardware   | ESP32, Raspberry Pi (server + storage)                |
 
@@ -61,8 +61,8 @@ ESP32-DigitalFrame/
 │ ├── image.html # Web dashboard
 │ ├── script.js # Frontend logic
 │ ├── style.css # Dashboard styling
-│ ├── trash-can.png # 
-│ └── cloud-upload.png # 
+│ ├── trash-can.png 
+│ └── cloud-upload.png 
 ├── photos/ # Stored and resized images
 └── tools.txt # Libraries and plugins used in this project.
 ```
@@ -123,5 +123,4 @@ On boot, ESP32 connects to server, downloads images, and begins display loop
 # Author
 
 **Tyler S.** <br />
-Computer Science Student <br />
 September 24, 2025.
