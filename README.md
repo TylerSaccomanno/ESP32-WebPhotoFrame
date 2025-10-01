@@ -32,7 +32,7 @@ Designed for educational and portfolio purposes, it showcases:
 
 - Hosts images in `photos/` directory
 - Converts HEIC/JPEG/PNG to JPEG (320×480) using Pillow
-- Exposes RESTful endpoints for image management and messaging
+- RESTful endpoints for image management and messaging
 - Serves dashboard UI and image assets
 
 ### Web Dashboard (`image.html`, `script.js`, `style.css`)
