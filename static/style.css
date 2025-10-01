@@ -1,0 +1,236 @@
+body{
+    background-color: rgb(54, 58, 68);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#imageContainer {
+    background-color: rgba(53, 56, 60, 0); 
+    margin: 10px;
+    border-radius: 20px; 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
+    gap: 10px; 
+    border: 2px solid white;
+    padding: 10px; 
+    bottom: 0; 
+    position: fixed; 
+    left: 0; 
+    right: 0; 
+    max-height: 210px; 
+    overflow: auto;
+
+}
+
+#imageContainer img {
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+#imageContainer::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+#uploadimg {
+    margin-left: 42%;
+    margin-top: 10%;
+}
+
+img:hover {
+    filter: blur(4px);
+    cursor: pointer;
+
+}
+
+button:hover::after img {
+    content: "";
+    position: absolute;
+    top: 25px; left: 22.5px; right: 0; bottom: 0;
+    background: url('/static/trash-can.png') center center no-repeat;
+    background-size: contain;
+    pointer-events: none;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay {
+    position: fixed;
+    display: none;
+    background-color: rgba(76, 76, 97, 0.605);
+    width: 25%;
+    height: 20%;
+    border-radius: 25px;
+    justify-self: center;
+    margin-top: 12.5%;
+
+}
+
+.overlay h1 {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.overlay button {
+    position: relative;
+    top: 0%;
+    left: 32.5%;
+    padding: 10px 20px;
+    background-color: blue;
+}
+
+#uploadTxt {
+    position: relative;
+    top: 0%;
+    margin-left: -2.5%;
+}
+
+#confirmDelete {
+    background-color: red;
+}
+
+#msgBoard {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 25.5%;
+    max-width: 18.5%;
+    min-height: 25%;
+    max-height: 20%;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 244, 244);
+    background-color: rgb(0, 0, 0);
+    color: #33FF00;
+    margin-left: 37.5%;
+    margin-top: 0%;
+}
+
+textarea::placeholder {
+    color: #33FF00;
+    text-align: left; 
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+    white-space: pre-wrap;  
+    overflow-wrap: break-word; 
+}
+
+h3 {
+    position: relative;
+    margin-left: 42.5%;
+    margin-top: 4%;
+}
+
+#sendMsg {
+    position: absolute;
+    margin-left: 50%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 17.5%;
+    width: 7.5%;
+    margin-left: 47.5%;
+    cursor: pointer;
+}
+
+
+
+@media only screen 
+    and (max-width: 430px) 
+    and (max-height: 932px) {
+        body {
+                overflow-y: hidden;
+        }
+        #imageContainer {
+            position: relative;
+            justify-items: start;
+            left: 0;
+            right: 0;
+            margin-left: 0;
+            margin-right: 0;
+            width: auto;
+            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); 
+            gap: 10px; 
+            padding: 10px; 
+            margin-top: 25%;
+            overflow-x: hidden;
+        }
+
+        #uploadimg {
+            margin-left: 0%;
+            margin-top: 25%;
+            margin-left: 15%;
+            width: 50%;
+        }
+
+        #imageContainer img {
+            border-radius: 20px; 
+        }   
+
+    .overlay {
+        position: fixed;
+        display: none;
+        background-color: rgba(76, 76, 97, 0.605);
+        width: 80%;
+        height: 20%;
+        border-radius: 25px;
+        justify-self: center;
+        margin-top: 50%;
+
+    }
+
+    .overlay h1 {
+        color: white;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .overlay button {
+        position: relative;
+        top: 0%;
+        left: 32.5%;
+        padding: 10px 20px;
+        background-color: blue;
+    }
+
+    #boardTxt {
+        position: relative;
+        width: auto;
+        margin-left: 22.5%;
+        font-size: 16px;
+        margin-top: 25%;
+    }
+
+    #msgBoard {
+    position:relative;
+    width: 25vh;         
+    height: 10vh;
+    margin-top: -10%;
+    max-width:none;      
+    min-width:0;
+    margin:15% 15% 15% 19%;  
+    display:block;
+  }
+
+
+    #sendMsg {
+        position: absolute;
+        margin-left: 50%;
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin-top: -5%;
+        width: 30%;
+        margin-left: 35%;
+        cursor: pointer;
+    }
+
+    }

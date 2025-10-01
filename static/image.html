@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Photo Gallery</title>
+</head>
+
+
+<body>
+    <!-- <button id="prevBtn">Previous</button>  --> 
+ <form method=post enctype=multipart/form-data action="/upload">
+    <input type="file" id="uploadimg" name="file" accept="image/*" multiple>
+    <input type="submit" id="uploadTxt" value="Upload">
+   </form>
+   <h3 id="boardTxt">Send a message to the frame!</h3>
+    <textarea id="msgBoard" name="msgBoard" placeholder="Start typing..." wrap="soft" maxlength="360"></textarea>
+    <button onclick="sendMsg()" id="sendMsg">Send</button>
+
+      <div id="imageContainer">
+        <!-- img go here -->
+</div>
+    <div id="overlay" class="overlay">
+        <h1>Delete Image?</h1>
+        <button id="confirmDelete">Yes</button>
+        <button id="cancelDelete">No</button>
+    </div>      
+</body>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</html>
