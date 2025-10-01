@@ -4,6 +4,9 @@ A full-stack IoT system that transforms an ESP32 microcontroller with a 4" TFT d
 
 ---
 
+https://github.com/user-attachments/assets/84067e64-e9f9-4c93-bfe6-568d01804caf
+
+
 ## Project Overview
 
 This project demonstrates real-time device-to-server communication and media streaming in embedded environments. It integrates embedded firmware, RESTful APIs, and a browser-based dashboard to deliver a remotely managed photo display system.
