@@ -119,7 +119,6 @@ On boot, ESP32 connects to server, downloads images, and begins display loop
 
  - Replace polling with MQTT or WebSocket for real-time updates
 
- - Touchscreen gesture support (if hardware permits)
 
 ---
 
